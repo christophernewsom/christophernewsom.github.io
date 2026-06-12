@@ -1,0 +1,1 @@
+Static one-page website using the selected 9 images and Garamond-style typography.
