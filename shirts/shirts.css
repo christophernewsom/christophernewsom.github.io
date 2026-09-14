@@ -18,7 +18,7 @@
 .eyebrow{margin:0 0 16px;font-family:var(--sans);font-size:10px;font-weight:500;line-height:1;text-transform:uppercase;letter-spacing:.21em}
 .shirt-intro h1{margin:0;font-family:var(--sans);font-size:clamp(54px,8vw,126px);font-weight:700;line-height:.82;letter-spacing:-.058em;font-synthesis:none}
 .shirt-intro h1 span{display:block}
-.shirt-intro h1 .after-descender{margin-top:.07em}
+.shirt-intro h1 .after-descender{margin-top:.16em}
 .intro-copy{max-width:470px;padding-bottom:.3em}
 .intro-copy p{margin:0;font-size:clamp(17px,1.25vw,21px);line-height:1.48}
 .intro-copy .intro-deck{margin-bottom:18px;font-family:var(--sans);font-size:clamp(14px,1.1vw,17px);font-weight:600;line-height:1.25;letter-spacing:-.012em}
@@ -35,7 +35,7 @@
 .shirt-copy{position:absolute;z-index:1;left:50%;top:25%;transform:translateX(-50%);width:47%;font-family:var(--sans);font-size:clamp(22px,4.05vw,64px);font-weight:700;line-height:.84;letter-spacing:-.058em;font-synthesis:none}
 .colorway:not(.colorway-featured) .shirt-copy{font-size:clamp(20px,2.9vw,46px)}
 .shirt-copy span{display:block}
-.shirt-copy .after-descender{margin-top:.065em}
+.shirt-copy .after-descender{margin-top:.15em}
 .mustard{--shirt:var(--mustard);--print:var(--ink);background:#dac384}
 .hemp{--shirt:var(--hemp);--print:var(--yellow);background:#d8d0c2}
 .black{--shirt:#171716;--print:#f7f5ef;background:#cbc6bd}
