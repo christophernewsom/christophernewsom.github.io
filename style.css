@@ -4,7 +4,7 @@ html{background:var(--background)}
 body{margin:0;background:radial-gradient(circle at top center,#fbfaf7 0%,var(--background) 64%);color:var(--text);font-family:Garamond,"EB Garamond","Adobe Garamond Pro","Cormorant Garamond",Georgia,serif;font-weight:400;letter-spacing:.01em}
 .page{width:min(1680px,100%);margin:0 auto;padding:32px var(--page-margin) 44px}
 .site-header{display:flex;align-items:baseline;justify-content:space-between;gap:20px 32px;padding-bottom:16px;border-bottom:1px solid var(--text);margin-bottom:30px}
-.site-header h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,2.4vw,34px);line-height:1.1;font-weight:700;letter-spacing:-.025em;white-space:nowrap}
+.site-header h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,2.4vw,34px);line-height:1.1;font-weight:400;letter-spacing:-.025em;white-space:nowrap}
 .divider{display:none}
 .tagline{margin:0;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;text-transform:uppercase;letter-spacing:.28em;text-align:right;white-space:nowrap}
 .tagline span{display:inline-block;margin:0 .35em;letter-spacing:0}
