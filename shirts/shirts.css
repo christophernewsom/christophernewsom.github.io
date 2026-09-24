@@ -1,0 +1,82 @@
+:root{
+  --mustard:#c59a22;
+  --hemp:#a6977e;
+  --yellow:#ffd532;
+  --ink:#0c0c0b;
+  --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.shirts-page{padding-bottom:24px}
+.wordmark{font-size:clamp(34px,4.2vw,62px);line-height:.95;font-weight:400;letter-spacing:.005em;white-space:nowrap;text-decoration:none}
+.shirts-header{position:relative}
+.section-nav{margin-left:auto;display:flex;gap:.65em;align-items:center;font-family:var(--sans);font-size:10px;font-weight:500;line-height:1;text-transform:uppercase;letter-spacing:.18em}
+.section-nav a{text-decoration:none}
+.section-nav a:hover{text-decoration:underline;text-underline-offset:.32em}
+
+.shirt-intro{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(280px,.84fr);gap:clamp(48px,8vw,136px);align-items:end;padding:clamp(52px,8vw,116px) clamp(12px,1.5vw,28px) clamp(52px,7vw,94px);border-top:1px solid var(--line)}
+.title-block{min-width:0}
+.eyebrow{margin:0 0 16px;font-family:var(--sans);font-size:10px;font-weight:500;line-height:1;text-transform:uppercase;letter-spacing:.21em}
+.shirt-intro h1{margin:0;font-family:var(--sans);font-size:clamp(54px,8vw,126px);font-weight:700;line-height:.82;letter-spacing:-.058em;font-synthesis:none}
+.shirt-intro h1 span{display:block}
+.shirt-intro h1 span+span{margin-top:.16em}
+.intro-copy{max-width:470px;padding-bottom:.3em}
+.intro-copy p{margin:0;font-size:clamp(17px,1.25vw,21px);line-height:1.48}
+.intro-copy .intro-deck{margin-bottom:18px;font-family:var(--sans);font-size:clamp(14px,1.1vw,17px);font-weight:600;line-height:1.25;letter-spacing:-.012em}
+
+.colorways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.colorway{min-width:0}
+.colorway-featured{grid-column:1/-1}
+.shirt-stage{position:relative;display:grid;place-items:center;min-height:clamp(390px,47vw,760px);overflow:hidden;background:#ded8cc}
+.colorway:not(.colorway-featured) .shirt-stage{min-height:clamp(360px,42vw,670px)}
+.shirt-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 38%,rgba(255,255,255,.32),transparent 50%),linear-gradient(135deg,rgba(255,255,255,.08),transparent 36%,rgba(0,0,0,.06));mix-blend-mode:soft-light}
+.tee{position:relative;width:min(61%,590px);aspect-ratio:.84;background:var(--shirt);color:var(--print);clip-path:polygon(28% 8%,39% 3%,45% 8%,55% 8%,61% 3%,72% 8%,98% 22%,86% 43%,73% 35%,78% 97%,22% 97%,27% 35%,14% 43%,2% 22%);filter:drop-shadow(0 20px 20px rgba(0,0,0,.17))}
+.tee::before{content:"";position:absolute;left:40%;top:3%;width:20%;height:10%;border-radius:0 0 50% 50%;background:rgba(0,0,0,.14);box-shadow:inset 0 -2px 2px rgba(255,255,255,.15)}
+.tee::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,.11),transparent 32%,rgba(0,0,0,.06) 70%,rgba(255,255,255,.04));opacity:.6}
+.shirt-copy{position:absolute;z-index:1;left:50%;top:25%;transform:translateX(-50%);width:47%;font-family:var(--sans);font-size:clamp(22px,4.05vw,64px);font-weight:700;line-height:.84;letter-spacing:-.058em;font-synthesis:none}
+.colorway:not(.colorway-featured) .shirt-copy{font-size:clamp(20px,2.9vw,46px)}
+.shirt-copy span{display:block}
+.shirt-copy span+span{margin-top:.15em}
+.mustard{--shirt:var(--mustard);--print:var(--ink);background:#dac384}
+.hemp{--shirt:var(--hemp);--print:var(--yellow);background:#d8d0c2}
+.black{--shirt:#171716;--print:#f7f5ef;background:#cbc6bd}
+
+.colorway-caption{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;padding:20px clamp(12px,1.5vw,28px) 38px}
+.colorway-caption h2{margin:0;font-family:var(--sans);font-size:clamp(17px,1.7vw,25px);font-weight:600;line-height:1;letter-spacing:-.025em;font-synthesis:none}
+.colorway-caption h2 span{padding:0 .12em;color:#777269;font-weight:400}
+.price{display:flex;flex-direction:column;align-items:flex-end;gap:5px;margin:0;font-family:var(--sans);white-space:nowrap;font-variant-numeric:tabular-nums}
+.price-amount{font-size:clamp(21px,1.8vw,28px);font-weight:600;line-height:.8;letter-spacing:-.035em}
+.shipping{font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.16em;color:#6d6961}
+
+.purchase-panel{display:grid;grid-template-columns:.7fr 1.2fr auto;gap:clamp(32px,5vw,80px);align-items:start;margin-top:14px;padding:clamp(38px,5vw,72px) clamp(12px,1.5vw,28px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.purchase-panel h2{margin:0;font-family:var(--sans);font-size:clamp(32px,3.4vw,52px);font-weight:600;line-height:.95;letter-spacing:-.045em;font-synthesis:none}
+.purchase-copy{max-width:590px}
+.purchase-copy p{margin:0 0 .8em;font-size:clamp(16px,1.15vw,19px);line-height:1.48}
+.purchase-copy .fine-print{font-family:var(--sans);font-size:10px;font-weight:500;line-height:1.45;text-transform:uppercase;letter-spacing:.11em;color:#6d6961}
+.checkout-button{align-self:center;min-width:210px;padding:16px 20px;border:1px solid #8d887e;background:transparent;color:#777269;font-family:var(--sans);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;cursor:not-allowed}
+
+.shirt-footer{display:flex;justify-content:space-between;gap:24px;padding:22px clamp(12px,1.5vw,28px) 0;font-family:var(--sans);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.12em}
+.shirt-footer p{margin:0}
+.shirt-footer a{text-decoration:none}
+.shirt-footer a:hover{text-decoration:underline;text-underline-offset:.3em}
+
+@media(max-width:1100px){
+  .section-nav{width:100%;margin-left:0;margin-top:6px}
+  .shirt-intro{grid-template-columns:1fr;align-items:start}
+  .intro-copy{padding-bottom:0}
+  .purchase-panel{grid-template-columns:1fr 1fr}
+  .checkout-button{grid-column:1/-1;justify-self:start}
+}
+@media(max-width:680px){
+  .wordmark{white-space:normal}
+  .shirt-intro{padding-left:0;padding-right:0}
+  .shirt-intro h1{font-size:clamp(50px,15.5vw,82px);line-height:.84}
+  .colorways{grid-template-columns:1fr}
+  .colorway-featured{grid-column:auto}
+  .shirt-stage,.colorway:not(.colorway-featured) .shirt-stage{min-height:118vw}
+  .tee{width:84%}
+  .shirt-copy,.colorway:not(.colorway-featured) .shirt-copy{font-size:clamp(27px,8.6vw,50px)}
+  .colorway-caption{padding-left:4px;padding-right:4px}
+  .purchase-panel{grid-template-columns:1fr;padding-left:4px;padding-right:4px}
+  .checkout-button{grid-column:auto;width:100%}
+  .shirt-footer{flex-direction:column;padding-left:4px;padding-right:4px}
+}
